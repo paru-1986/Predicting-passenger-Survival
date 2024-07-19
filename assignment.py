@@ -53,13 +53,13 @@ if __name__ == "__main__":
         print(precision)
         print(recall)
         print(f1)
-
+    
         mlflow.log_param("accuracy", accuracy)
         mlflow.log_param("precision", precision)
         mlflow.log_param("recall", recall)
         mlflow.log_param("f1", f1)
 
-        #mlflow.log_metric("accuracy", accuracy)
-        #mlflow.log_metric("precision", precision)
-        #mlflow.log_metric("recall", recall)
-        #mlflow.log_metric("f1", f1)
+        mlflow.log_metric("accuracy", accuracy)
+        mlflow.log_metric("precision", precision)
+        mlflow.log_metric("recall", recall)
+        mlflow.log_metric("f1", f1)
